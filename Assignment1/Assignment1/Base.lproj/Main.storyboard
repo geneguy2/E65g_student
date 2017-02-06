@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,14 +20,14 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFh-iM-jmd">
-                                <rect key="frame" x="0.0" y="20" width="667" height="306"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vtn-UP-ic5" userLabel="LifeGrid">
-                                        <rect key="frame" x="213.5" y="32.5" width="240" height="240"/>
+                                        <rect key="frame" x="87" y="213" width="240" height="240"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GW5-bJ-8gL" userLabel="Frames/second">
                                                 <rect key="frame" x="61" y="74" width="118" height="31"/>
@@ -112,15 +112,24 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuR-ib-lOo" userLabel="wrapper">
-                                <rect key="frame" x="0.0" y="20" width="667" height="306"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iS-Vf-fzi" userLabel="Pink">
-                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="306"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="333.66666666666669"/>
                                         <color key="backgroundColor" red="0.91372549020000005" green="0.050980392159999999" blue="0.0" alpha="0.40581896551724139" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ym5-ow-rTv">
+                                        <rect key="frame" x="0.0" y="333.66666666666674" width="414" height="333.33333333333326"/>
+                                        <color key="backgroundColor" red="0.33904851790000001" green="0.9672469239" blue="0.23017163030000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="10"/>
@@ -130,12 +139,16 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="Ym5-ow-rTv" firstAttribute="top" secondItem="2iS-Vf-fzi" secondAttribute="bottom" id="2d2-6o-6yq"/>
+                                    <constraint firstItem="Ym5-ow-rTv" firstAttribute="leading" secondItem="TuR-ib-lOo" secondAttribute="leading" id="D65-wj-gw7"/>
                                     <constraint firstItem="2iS-Vf-fzi" firstAttribute="height" secondItem="TuR-ib-lOo" secondAttribute="height" multiplier="0.5" id="Ece-IQ-N3I"/>
                                     <constraint firstItem="2iS-Vf-fzi" firstAttribute="top" secondItem="TuR-ib-lOo" secondAttribute="top" id="Fgo-r8-0oR"/>
                                     <constraint firstItem="2iS-Vf-fzi" firstAttribute="leading" secondItem="TuR-ib-lOo" secondAttribute="leading" id="ag1-tT-cbv"/>
                                     <constraint firstAttribute="trailing" secondItem="2iS-Vf-fzi" secondAttribute="trailing" id="ejn-VD-A7p"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ym5-ow-rTv" secondAttribute="trailing" id="hDr-nn-spy"/>
                                     <constraint firstAttribute="bottom" secondItem="2iS-Vf-fzi" secondAttribute="bottom" id="jQb-yM-k80"/>
                                     <constraint firstItem="2iS-Vf-fzi" firstAttribute="width" secondItem="TuR-ib-lOo" secondAttribute="width" multiplier="0.5" id="omc-Ax-WdG"/>
+                                    <constraint firstItem="Ym5-ow-rTv" firstAttribute="height" secondItem="TuR-ib-lOo" secondAttribute="height" multiplier="0.5" id="vOK-ZN-I58"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -143,18 +156,23 @@
                                         <exclude reference="ejn-VD-A7p"/>
                                         <exclude reference="jQb-yM-k80"/>
                                         <exclude reference="omc-Ax-WdG"/>
+                                        <exclude reference="hDr-nn-spy"/>
+                                        <exclude reference="vOK-ZN-I58"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
                                         <include reference="jQb-yM-k80"/>
                                         <include reference="omc-Ax-WdG"/>
+                                        <include reference="hDr-nn-spy"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
                                     <mask key="constraints">
                                         <include reference="Ece-IQ-N3I"/>
                                         <include reference="ejn-VD-A7p"/>
+                                        <include reference="hDr-nn-spy"/>
+                                        <include reference="vOK-ZN-I58"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -171,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="737.68115942028987" y="347.28260869565219"/>
+            <point key="canvasLocation" x="736.875" y="346.47887323943661"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
