@@ -474,7 +474,7 @@ extension Grid {
 
 // Problem 17 comment goes here
 /*
- 
+$1 is a shorthanded way of passing a second argument/parameter in a closure
  */
 
 /*:
