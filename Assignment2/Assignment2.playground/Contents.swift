@@ -179,7 +179,7 @@ func map2<T>(_ rows: Int, _ cols: Int, transform: (Int, Int) -> T) -> [[T]] {
 */
 // ** Your Problem 5 comment goes here! **
 /*
- 
+ They represent the relative positions of the neighbors of a given cell
  */
 /*:
  ## Problem 6:
