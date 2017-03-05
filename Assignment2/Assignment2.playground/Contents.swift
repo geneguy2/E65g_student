@@ -106,7 +106,9 @@ enum CellState {
     
   
     var isAlive: Bool {
-        return false
+        switch self {
+        case .alive, .born: return true
+        default: return false
     }
 }
 /*:
@@ -119,8 +121,8 @@ enum CellState {
 // A struct representing a Cell in Conway's Game of Life
 struct Cell {
     // ** Your Problem 3 code goes here! replace the following two lines **
-    var position: Position
-    var state: CellState
+    var position = (row: 0, col: 0)
+    var state = CellState.empty
 }
 /*:
  ## Problem 4:
