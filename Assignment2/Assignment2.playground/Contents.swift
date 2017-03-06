@@ -300,21 +300,21 @@ extension Grid {
  */
 // ** Your Problem 11.1 answer goes here **
 /*
- 
+ It will combine the Int values.
  */
 /*:
  2. what is the return type of reduce2
  */
 // ** Your Problem 11.2 answer goes here **
 /*
- 
+ The return type will be an Int.
  */
 /*:
  3. why is there no T parameter here as in map2 above
  */
 // ** Your Problem 11.3 answer goes here **
 /*
- 
+ Because we know that the type we want to use is an Int.
  */
 
 // A function which is useful for counting things in an array of arrays of things
