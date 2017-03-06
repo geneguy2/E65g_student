@@ -426,7 +426,7 @@ extension Grid {
  */
 // Problem 15.1 answer goes here
 /*
- Cell is an Optional.
+cell is a subscript
  */
 /*:
  2. what the type of `self[row,col]`?
@@ -440,7 +440,7 @@ extension Grid {
  */
 // Problem 15.3 comment goes here
 /*
- Tuples can contain values of different types and Optionals are used when you are not sure what the type will be.
+ Tuples can contain values of different types and subscripts allow you to declare functionality for instances.
  */
 /*:
  4. under what circumstances will the `else` clause will be executed?
@@ -495,8 +495,10 @@ $1 is a shorthand way of passing a second argument/parameter in a closure
 // cell in position row, col
 extension Grid {
     func livingNeighbors(of cell: Cell) -> Int {
+        
         return self
             .neighbors(of: cell)
+           
             .reduce(0) {
                 guard let neighborCell = self[$1.row, $1.col] else { return $0 }
                 // ** Problem 18 code goes here!  replace the following 2 lines **
