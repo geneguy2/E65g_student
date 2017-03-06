@@ -221,8 +221,9 @@ struct Grid {
     ]
     
     // ** Your Problem 6 code goes here! Change the following two lines **
-    var rows: Int = 0
-    var cols: Int = 0
+    
+    var rows: Int = 10
+    var cols: Int = 10
     var cells: [[Cell]] = [[Cell]]()
     
     init(_ rows: Int,
@@ -425,28 +426,28 @@ extension Grid {
  */
 // Problem 15.1 answer goes here
 /*
- 
+ Cell is an Optional.
  */
 /*:
  2. what the type of `self[row,col]`?
  */
 // Problem 15.2 answer goes here
 /*
- 
+ That is a Tuple.
  */
 /*:
  3. why those two types are different?
  */
 // Problem 15.3 comment goes here
 /*
- 
+ Tuples can contain values of different types and Optionals are used when you are not sure what the type will be.
  */
 /*:
  4. under what circumstances will the `else` clause will be executed?
  */
 // Problem 15.4 comment goes here
 /*
- 
+ when the other statement is false.
  */
 /*:
  ## Problem 16:
@@ -458,7 +459,7 @@ extension Grid {
 
 // Problem 16 comment goes here
 /*
- 
+ Reduce combines all items in a collection to create a single new value.
  */
 
 /*:
@@ -474,7 +475,7 @@ extension Grid {
 
 // Problem 17 comment goes here
 /*
-$1 is a shorthanded way of passing a second argument/parameter in a closure
+$1 is a shorthand way of passing a second argument/parameter in a closure
  */
 
 /*:
@@ -563,7 +564,7 @@ extension Grid {
 
 // ** Your Problem 21 comment goes here! **
 /*
- 
+ It creates another grid of rows and columns.
  */
 /*:
  ## Problem 22:
